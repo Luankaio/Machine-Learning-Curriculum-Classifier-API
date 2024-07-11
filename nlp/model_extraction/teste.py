@@ -1,0 +1,22 @@
+import joblib
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# Carregar o modelo salvo
+model = joblib.load('model.pkl')
+vetorizador = joblib.load('vetorizador.pkl')
+# Texto de entrada para previsão
+text = ("business development manager staffing manager professional summary innovative manager seek position offer opportunity new professional personal challenge self starter positive attitude drive learn improve succeed year proactive indirect diverse recruiting staffing experience education training bachelor science health science option health management marketing california state university hayward city state united states skill highlights staffing management ability prove patience self discipline relationship team building staff training development critical thinking proficiency compensation benefit administration skilled negotiator account management excellent write verbal communicator enthusiastic team player problem solve billing attention detail recruiting selection technique proficient communicator contract review cold calling hiring recommendation interviewing strategic planning multi tasking ability skill â proficient microsoft word excel powerpoint access outlook express â optimizer wfx stafferlink healthtrust bullhorn maintain active database hospital proprietary software technology system professional experience current business development manager staffing manager company city state manage cycle staffing recruiting maintain database client applicant align business opportunity market recruitment staffing placement responsible job posting hiring interviewing train new employee â generate new account implement effective networking content marketing strategy manage budget forecasting goal setting performance report account negotiate rate cut cost benefit corporate partnership demonstrate knowledge hipaa privacy security regulations conduct reference background check job applicant develop creative recruiting strategy meet anticipate staffing need communicate duty compensation benefit work condition potential candidate contact job applicant inform application status work director nursing human resource directors ensure healthcare organization able support business growth coach counsel employee attendance performance mediate employee dispute complaint â respond onboard new employee time reporting payroll system manage payroll time attendance system staffing coordinator company city state created maintain absentee calendar agency nurse schedule staff meeting minute maintain confidential personnel file licensing cpr compliance record develop computerized schedule assign nursing unit base establish staffing pattern policy approve employee preference manager request revise adjust unit schedule need consultation nurse manager â proactively adjust allocate core registry float nursing personnel provide adequate coverage clinic inpatient area strategically meet real time staffing requirement cost effective manner staffing manager company city state manage cycle staffing recruiting maintain database client applicant align business opportunity market recruitment staffing placement responsible job posting hiring interviewing train new employee â generate new account implement effective networking content marketing strategy manage budget forecasting goal setting performance report account â negotiate rate cut cost benefit corporate partnership â demonstrate knowledge hipaa privacy security regulations â conduct reference background check job applicant â develop creative recruiting strategy meet anticipate staffing need â communicate duty compensation benefit work condition potential candidate â contact job applicant inform application status work director nursing human resource directors ensure healthcare organization able support business growth coach counsel employee attendance performance mediate employee dispute complaint â respondâ onboard new employee time reporting payroll systemsâ manage payroll time attendance system")
+
+# Vetorizador TF-IDF
+
+# Ajustar o vetorizador com os dados de treinamento do modelo
+# Supondo que seus dados de treinamento estejam em uma lista chamada 'dados_treinamento'
+# vetorizador.fit(dados_treinamento)
+
+# Transformar o texto de entrada usando o vetorizador ajustado
+previsores = vetorizador.transform([text])
+
+# Verificar se o modelo é um pipeline que inclui TfidfVectorizer
+prediction = model.predict(previsores)
+
+print(prediction)

@@ -110,7 +110,9 @@ TODO: Guide users through getting your code up and running on their own system. 
                 DIGITAL-MEDIA            
                 AGRICULTURE              
                 AUTOMOBILE               
-                BPO         
+                BPO
+    ### note:
+        Please be aware that the classification models integrated into our API are designed to classify resumes written exclusively in English. Resumes in other languages will not be accurately processed or classified by the current models.
 # API
 - ## Layout
     ![ApiLayout](./dataBase/readme/ApiLayout.png)

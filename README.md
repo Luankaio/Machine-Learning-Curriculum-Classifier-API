@@ -48,7 +48,6 @@
 
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 - ## Envirement preparation
     1.	Prepare Libraries:
     
@@ -58,10 +57,10 @@ TODO: Guide users through getting your code up and running on their own system. 
             git lfs install
 
             git lfs pull     
-    2.  Run:
+    3.  Run:
     
             uvicorn application:app --reload
-    3.	API references
+    4.	API references
 
 
 - ## Use Instruction

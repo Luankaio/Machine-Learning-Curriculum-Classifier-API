@@ -53,6 +53,11 @@ TODO: Guide users through getting your code up and running on their own system. 
     1.	Prepare Libraries:
     
             pip install -r ./configure/requirements.txt
+    2.  Git lfs:
+
+            git lfs install
+
+            git lfs pull     
     2.  Run:
     
             uvicorn application:app --reload
